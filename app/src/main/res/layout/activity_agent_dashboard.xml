@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    tools:context=".AgentDashboardActivity">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello Agent"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginBottom="40dp" />
+
+    <Button
+        android:id="@+id/btnManageProperties"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gérer les offres"
+        android:textAllCaps="false"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#4B75D3" />
+
+    <Button
+        android:id="@+id/btnViewRequests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consulter les demandes"
+        android:textAllCaps="false"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#4B75D3" />
+
+    <Button
+        android:id="@+id/btnManageProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gérer le profile"
+        android:textAllCaps="false"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#4B75D3" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Déconnexion"
+        android:textAllCaps="false"
+        android:padding="16dp"
+        android:backgroundTint="#D32F2F" />
+
+</LinearLayout>

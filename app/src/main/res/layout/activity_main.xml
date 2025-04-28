@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Authentication Layout -->
+    <LinearLayout
+        android:id="@+id/layout_auth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Connexion"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"/>
+
+        <EditText
+            android:id="@+id/auth_edit_text_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:autofillHints="emailAddress"
+            android:layout_marginBottom="16dp"/>
+        <EditText
+            android:id="@+id/auth_edit_text_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Mot de passe"
+            android:inputType="textPassword"
+            android:autofillHints="password"
+            android:layout_marginBottom="8dp"/>
+        <TextView
+            android:id="@+id/auth_text_view_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FF0000"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/auth_button_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Se connecter"
+            android:backgroundTint="#4B75D3"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/auth_button_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Créer un compte"
+            android:backgroundTint="#4B75D3"/>
+    </LinearLayout>
+
+    <!-- Create Account Layout -->
+    <ScrollView
+        android:id="@+id/layout_create_account"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Création de compte"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="24dp"/>
+
+            <RadioGroup
+                android:id="@+id/cpt_radio_group_role"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <RadioButton
+                    android:id="@+id/cpt_radio_button_agent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Agent"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/cpt_radio_button_client"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Client"/>
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/cpt_edit_text_nom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nom"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/cpt_edit_text_prenom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Prénom"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/cpt_edit_text_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Age"
+                android:inputType="number"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/cpt_edit_text_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Ajout du champ mot de passe manquant -->
+            <EditText
+                android:id="@+id/cpt_edit_text_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mot de passe"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/cpt_edit_text_tel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Téléphone"
+                android:inputType="phone"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/cpt_edit_text_pays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pays"
+                android:inputType="text"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/cpt_edit_text_agency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nom de l'agence"
+                android:inputType="text"
+                android:layout_marginBottom="24dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/cpt_button_annuler"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Annuler"
+                    android:layout_marginEnd="8dp"
+                    android:backgroundTint="#9E9E9E"/>
+
+                <Button
+                    android:id="@+id/cpt_button_confirmer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Confirmer"
+                    android:layout_marginStart="8dp"
+                    android:backgroundTint="#4B75D3"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Main Menu Layout -->
+    <LinearLayout
+        android:id="@+id/layout_main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menu Principal"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Vous pouvez ajouter ici les boutons du menu principal -->
+        <Button
+            android:id="@+id/main_button_consulter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consulter les offres"
+            android:backgroundTint="#4B75D3"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/main_button_gerer_demandes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gérer les demandes"
+            android:backgroundTint="#4B75D3"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/main_button_profil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gérer le profil"
+            android:backgroundTint="#4B75D3"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/main_button_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Déconnexion"
+            android:backgroundTint="#D32F2F"/>
+    </LinearLayout>
+</LinearLayout>

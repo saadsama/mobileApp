@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Authentication layout (visible by default) -->
+    <include
+        android:id="@+id/layout_auth"
+        layout="@layout/layout_authentication"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+    <!-- Account creation layout (invisible by default) -->
+    <include
+        android:id="@+id/layout_create_account"
+        layout="@layout/layout_create_account"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <!-- Main menu layout (invisible by default) -->
+    <include
+        android:id="@+id/layout_main_menu"
+        layout="@layout/layout_main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    tools:context=".ClientDashboardActivity">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bonjour"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="40dp" />
+
+    <Button
+        android:id="@+id/btnConsultOffers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consulter les offres"
+        android:textAllCaps="false"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#4B75D3" />
+
+    <Button
+        android:id="@+id/btnManageRequests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gérer les demandes"
+        android:textAllCaps="false"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#4B75D3" />
+
+    <Button
+        android:id="@+id/btnManageProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gérer le profile"
+        android:textAllCaps="false"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#4B75D3" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Déconnexion"
+        android:textAllCaps="false"
+        android:padding="16dp"
+        android:backgroundTint="#D32F2F" />
+
+</LinearLayout>
